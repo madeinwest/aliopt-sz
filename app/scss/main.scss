@@ -178,7 +178,11 @@ li{
 		a{
 			padding-right: 45px;
 			background: url(../img/png/dwnld.png) no-repeat right;
-			background-size: 20px 20px;
+			&:hover{
+				background: url(../img/png/dwnld_h.png) no-repeat right;
+				
+
+			}
 		}
 		
 	}
@@ -199,13 +203,11 @@ li{
 	li:last-child{
 		a{
 			background: url(../img/png/pen.png) no-repeat left 50%;
-			background-size: 20px 20px;
 		}
 	}
 		li:first-child{
 		a{
 			background: url(../img/png/login.png) no-repeat left 50%;
-			background-size: 20px 20px;
 		}
 	}
 }
@@ -215,14 +217,19 @@ li{
 	vertical-align: top;
 }
 .head-main-con{
-	height: 200px;
+	min-height: 200px;
 	font-size: 15px;
 	line-height: 30px;
 }
 .head-con-l{
-	img{
-		width: 320px;
-		transform: translateY(50%);
+
+		line-height: 190px;
+	a{
+		img{
+			width: 320px;
+			display: inline-block;
+			vertical-align: middle;
+		}	
 	}
 }
 .head-con-c{
@@ -331,6 +338,26 @@ nav{
 }
 .nav-open{
 	padding-right: 45px;
+	position: relative;
+	&:after{
+		position: absolute;
+		z-index: 2;
+		background:url(../img/png/dwnld.png) no-repeat;
+		width: 21px;
+		height: 18px;
+		content: '';
+		transform: rotate(-90deg);
+		transition: all 0.25s;
+		right: 4px;
+		top: 50%;
+		margin-top: -9px;
+	}
+	&:hover{
+		&:after{
+			transform: rotate(0deg);
+
+		}
+	}
 }
 
 .catalog-it{
@@ -534,9 +561,12 @@ nav{
 		}
 		button:first-child{
 			float: left;
+			margin-left: 2px;
 		}
 		button:last-child{
 			float: right;
+	
+			margin-right: 2px;
 			height: 38px;
 		}
 	}
@@ -588,18 +618,23 @@ nav{
 	form{
 		background: #fff;
 		border-radius: 30px;
+		overflow: hidden;
 		height: 55px;
-		padding: 13px;
+		//padding: 13px;
 		margin:25px 0 30px;
 		width: 470px;
 		position: relative;
 		input{
-			width: 280px;
-			padding: 5px;
+			//width: 280px;
+			//padding: 5px;
 			font-size: 18px;
 			color: #585858;
 			font-weight: 600;
-			border: none
+			border: none;
+
+			width: 320px;
+			height: 100%;
+			padding: 5px 5px 5px 18px;
 		}
 		button{
 			position: absolute;
