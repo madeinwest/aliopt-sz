@@ -223,7 +223,7 @@ li{
 }
 .head-con-l{
 
-		line-height: 190px;
+		line-height: 175px;
 	a{
 		img{
 			width: 320px;
@@ -298,7 +298,7 @@ li{
 		width: 100%;
 		padding: 11px 0;
 		color: #fff;
-		font-weight: 700;
+		font-weight: 600;
 		font-size: 16px;
 		&:hover{
 			background-color: #70bdc3;
@@ -734,7 +734,7 @@ h2{
 	}
 	h3{
 		text-align: left;
-		font-weight: 700;
+		font-weight: 600;
 		font-size: 18px;
 		line-height: 24px;
 		margin-bottom: 10px;
@@ -839,7 +839,7 @@ footer{
   	  border-bottom: 1px solid #053549;
   	  line-height: 17px;
 	    color: #053549;
-  	  font-weight: 700;
+  	  font-weight: 600;
 		}
 	}
 }
@@ -893,16 +893,17 @@ footer{
 	margin-top: 22px;
 	font-size: 14px;
 	line-height: 26px;
-	p{
-		margin-bottom: 20px;
+	a{
+		font-weight: 500;
 	}
-	span{
+	a:nth-of-type(2){
 		color: $accent;
 		margin-left: 5px;
 	}
 	h2{
 		padding-bottom: 30px;
 		margin-bottom: 30px;
+		margin-top: 20px;
 	}
 }
 .social-con{
@@ -930,7 +931,7 @@ footer{
 			margin-right: 0;
 		}
 		span{
-			font-weight: 700;
+			font-weight: 600;
 		}
 	}
 }
@@ -969,7 +970,7 @@ footer{
 	color: $accent;
 	height: 100%;
 	h5{
-		font-weight: 800;
+		font-weight: bold;
 	}
 	p{
 		padding:0 40px 0 15px;
@@ -983,13 +984,13 @@ footer{
 	padding-left: 40px;
 	h5{
 		text-align: left;
-		font-weight: 700;
+		font-weight: 600;
 	}
 	a{
 		float: right;
 		margin-right: 25px;
 		color: $accent;
-		font-weight: 700;
+		font-weight: 600;
 		border-bottom:1px dashed $accent;
 		&:hover{
 			border: none;
@@ -1021,7 +1022,7 @@ h5{
 			background-image: url(../img/ico/calendar-bl.png);
 		}
 		p{
-			font-weight: 700;
+			font-weight: 600;
 			padding-bottom: 5px;
 		}
 	}
@@ -1041,7 +1042,7 @@ h5{
 	}
 	p:first-child{
 		font-size: 18px;
-		font-weight: 700;
+		font-weight: 600;
 		color: #585858;
 		line-height: 24px;
 		margin-bottom: 15px;
@@ -1104,7 +1105,7 @@ h5{
 		margin-bottom: 20px;
 	}
 	p{
-		font-weight: 700;
+		font-weight: 600;
 	}
 }
 .way{
@@ -1218,7 +1219,7 @@ h5{
 .contacts-in-con{
 	margin-top: 35px;
 	p{
-		font-weight: 700;
+		font-weight: 600;
 		margin-bottom: 0;
 		padding-right: 0;
 	}
@@ -1356,7 +1357,7 @@ h5{
 	button{
 		width: 100%;
 		padding:12px 0;
-		font-weight: 800;
+		font-weight: bold;
 	}
 }
 /*----------------------- Pay (Оплата)------------------------------*/
@@ -1531,6 +1532,159 @@ h5{
 	&:first-of-type{
 		.square{
 			background-image: url(../img/ico/convers.png);
+		}
+	}
+}
+
+/*----------------------- About company (О компании)------------------------------*/
+
+.about-comp{
+	margin-top: 21px;
+}
+.advant-it{
+	width: 350px;
+	margin-right: 5px;
+	&:last-of-type{
+		margin-right: 0;
+		margin-left: 40px;
+		.adn-numb{
+			margin-left: 40px;
+			p{
+				margin-left: 100px;
+			}
+		}
+	}
+	.adn-numb{
+		width: 294px;
+		margin-left: 30px;
+		height: 110px;
+		border:solid 3px #dfdfdf;
+		position: relative;
+		margin-bottom: 45px;
+		span{
+			font-size: 60px;
+			line-height: 60px;
+			color: $lblue;
+			background-color: #fff;
+			position: absolute;
+			top:50%;
+			transform: translate(-50%, -50%);
+			left:0;
+		}
+		p{
+			font-size: 24px;
+			line-height: 24px;
+			font-weight: 300;
+			margin-left: 59px;
+			margin-top:29px;
+			color: #888;
+		}
+	}
+	p{
+		font-size: 14px;
+		line-height: 24px;
+		padding-right: 20px;
+		span{
+			font-weight: 600;
+		}
+	}
+}
+.for-who{
+	margin-top: 40px;
+	height: 280px;
+	margin-bottom: 50px;
+	.abcom-it{
+		width: 200px;
+		text-align: center;
+		margin-top: 24px;
+		margin-left: 16px;
+		margin-right: 67px;
+		vertical-align: bottom;
+		&:nth-of-type(3n){
+			margin-right: 0;
+		}
+		img{
+			display: block;
+			margin: 0 auto 15px;
+		}
+	}
+}
+.our-adv{
+	h5{
+		text-align: left;
+		margin-bottom: 45px;
+	}
+	.circle{
+		width: 100px;
+		height: 100px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	p:first-of-type{
+		font-weight: 600;
+	}
+	.our-adv-it{
+		width: 540px;
+		margin-right: 24px;
+		margin-bottom: 25px;
+		&:nth-of-type(2n){
+			margin-right: 0;
+		}
+		div:nth-of-type(2){
+			margin-left: 15px;
+			margin-top: 10px;
+		}
+		&:first-of-type{
+			.circle{
+				background-image: url(../img/ico/our-adv-it1.png);
+			}
+		}
+		&:nth-of-type(2){
+			.circle{
+				background-image: url(../img/ico/our-adv-it2.png);
+			}
+		}
+		&:nth-of-type(3){
+			.circle{
+				background-image: url(../img/ico/our-adv-it3.png);
+			}
+		}
+				&:nth-of-type(4){
+			.circle{
+				background-image: url(../img/ico/our-adv-it4.png);
+			}
+		}
+				&:nth-of-type(5){
+			.circle{
+				background-image: url(../img/ico/our-adv-it5.png);
+			}
+		}
+		&:nth-of-type(6){
+			.circle{
+				background-image: url(../img/ico/our-adv-it6.png);
+			}
+		}
+
+	}
+}
+.want-to-und{
+	margin-bottom: 42px;
+	h5{
+		text-align: left;
+		margin-top: 5px;
+		margin-bottom: 40px;
+	}
+	p{
+		width: 45%;
+		font-size: 14px;
+		line-height: 24px;
+		display: inline-block;
+		vertical-align: top;
+		&:first-of-type{
+			margin-right: 65px;
+		}
+		&:last-of-type{
+			font-weight: 600;
 		}
 	}
 }
