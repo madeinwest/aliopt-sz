@@ -2,7 +2,80 @@
 
 
 @media screen and (max-width : 1200px) {
+.wrap{
+	width: 750px;
+}
+section,
+header,
+footer{
+	min-width: 540px;
+}
 
+.head-nav-left,
+.head-nav-rigth{
+	width: auto;
+}
+
+.head-nav-left li:last-child a {
+	padding-right: 30px;
+}
+.head-nav-left{
+	li{
+		margin-right: 5px;
+	}
+}
+.head-nav-rigth{
+	li{
+		margin-left: 5px;
+	}
+}
+.head-con-l{
+		line-height: 120px;
+	a{
+		img{
+			width: 240px;
+		}	
+	}
+}
+.head-con-c{
+	width: auto;
+	form{
+		position: absolute;
+		left: 0;
+		select{
+			width: 180px;
+			margin-right: 80px;
+		}
+	}
+}
+.head-con-cr{
+	display: none;
+}
+.head-con-r{
+	position: absolute;
+	top:0;
+	right: 0;
+}
+.main-nav{
+	li:nth-child(n+5){
+		display: none;
+	}
+}
+.catalog-it{
+	margin: 20px 30px 8px 34px;
+}
+.banner-1{
+	background: none;
+	margin-top: 7px;
+	.ban1{
+		background: url(../img/ban-1-bg.jpg) no-repeat center;
+		p{
+			font-size: 30px;
+		}
+	}
+}
+
+/*----------------------------------------------- */
 }
 @media screen and (max-width : 992px) {
 
