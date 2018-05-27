@@ -513,8 +513,8 @@
         font-size: 14px;
         p
         {
-            margin-bottom: 20px;;
-            padding-right: 0;
+            margin-bottom: 20px;
+            padding-right: 0;;
         }
         .cont-inf-it
         {
@@ -594,156 +594,799 @@
         }
     }
     /*---------------Оплата------------------------------------- */
-.pay{
-	p{
-		padding: 0;
-		margin-bottom: 20px;
-	}
-	h5{
-		margin-top: 10px;
-		font-size: 22px;
-		&:last-of-type{
-			margin-bottom: 0;
-		}
-	}
-	.pay-for{
-		p{
-			margin-bottom: 10px;
-			font-size: 16px;
-		}
-		.pay-banks-con{
-			a{
-				max-width: 20%;
-   		  margin-right: 5px;
-   		  vertical-align: middle;
-			}
-			img{
-				max-width: 100%;
-			}
-		}
-		&:nth-of-type(2){
-			p{
-				margin-top: 0;
-				padding-bottom: 20px;
-				&:first-of-type{
-					padding-left: 115px;
-					background-size: 13%;
-				}
-				&:nth-of-type(3){
-					padding-bottom: 5px;
-				}
-				&:last-of-type{
-					background-size: 13%;
-					margin-bottom: 30px;
-					padding-bottom: 45px;
-					padding-top:45px;
-					padding-left: 110px;
-					background-position: top left;
-				}
-			}
-		}
-	}
-}
-.pay-for:nth-of-type(2) p:nth-child(2), .pay-for:nth-of-type(2) p:nth-child(3) {
-	font-size: 14px;
-}
-    /*--------------О компании------------------------------------- */
-.about-comp{
-	font-size: 14px;
-}
-.advant-it{
-	width: 230px;
-	margin-right: 25px;
-	p{
-		padding-right: 5px;
-	}
-	&:last-of-type{
-		margin-left: 0;
-		.adn-numb{
-			p{
-				margin-left: 70px;
-			}
-		}
-	}
-	.adn-numb{
-		width: 180px;
-		height: 75px;
-		span{
-			font-size: 40px;
-		}
-		p{
-			font-size: 14px;
-			margin-top: 17px;
-			line-height: 18px;
-			margin-left: 40px;
-			padding-right: 0;
-		}
-	}
-}
-.for-who{
-	height: 280px;
-	.way-left{
-		a{
-			margin-top: 40px;
-		}
-	}
-	.way-right{
-		padding-left: 20px;
-		.abcom-it{
-			width:170px;
-			margin: 0;
-			margin-top: 25px;
-			vertical-align: bottom;
-			&:last-of-type{
-				p{
-					padding: 0 20px;
-				}
-			}
-		}
-	}
-}
-.our-adv{
-	h5{
-		font-size: 22px;
-		margin-bottom: 25px;
-	}
-	.circle{
-		width: 90px;
-		height: 90px;
-		box-shadow: 2px 2px 0 0 #70bdc3;
-	}
-	.our-adv-it{
-		width: 49%;
-		margin-right: 0;
-		margin-bottom: 0;
-		div:nth-of-type(2){
-			margin-left: 5px;
-		}
-		p{
-			br{
-				display: none;
-			}
-		}
-		.dib:last-child{
-			width: 268px;
-		}
-	}
-}
-.want-to-und{
-	margin-bottom: 15px;
-	h5{
-		font-size: 22px;
-		margin-bottom: 25px;
-	}
-	p{
-		width: 100%;
-		margin-right: 0;
-		margin-bottom: 25px;
-	}
-}
-/* ----------------------------------------------------*/
+    .pay
+    {
+        p
+        {
+            margin-bottom: 20px;
+            padding: 0;
+        }
+        h5
+        {
+            font-size: 22px;
 
+            margin-top: 10px;
+            &:last-of-type
+            {
+                margin-bottom: 0;
+            }
+        }
+        .pay-for
+        {
+            p
+            {
+                font-size: 16px;
+
+                margin-bottom: 10px;
+            }
+            .pay-banks-con
+            {
+                a
+                {
+                    max-width: 20%;
+                    margin-right: 5px;
+
+                    vertical-align: middle;
+                }
+                img
+                {
+                    max-width: 100%;
+                }
+            }
+            &:nth-of-type(2)
+            {
+                p
+                {
+                    margin-top: 0;
+                    padding-bottom: 20px;
+                    &:first-of-type
+                    {
+                        padding-left: 115px;
+
+                        background-size: 13%;
+                    }
+                    &:nth-of-type(3)
+                    {
+                        padding-bottom: 5px;
+                    }
+                    &:last-of-type
+                    {
+                        margin-bottom: 30px;
+                        padding-top: 45px;
+                        padding-bottom: 45px;
+                        padding-left: 110px;
+
+                        background-position: top left;
+                        background-size: 13%;
+                    }
+                }
+            }
+        }
+    }
+    .pay-for:nth-of-type(2) p:nth-child(2),
+    .pay-for:nth-of-type(2) p:nth-child(3)
+    {
+        font-size: 14px;
+    }
+    /*--------------О компании------------------------------------- */
+    .about-comp
+    {
+        font-size: 14px;
+    }
+    .advant-it
+    {
+        width: 230px;
+        margin-right: 25px;
+        p
+        {
+            padding-right: 5px;
+        }
+        &:last-of-type
+        {
+            margin-left: 0;
+            .adn-numb
+            {
+                p
+                {
+                    margin-left: 70px;
+                }
+            }
+        }
+        .adn-numb
+        {
+            width: 180px;
+            height: 75px;
+            span
+            {
+                font-size: 40px;
+            }
+            p
+            {
+                font-size: 14px;
+                line-height: 18px;
+
+                margin-top: 17px;
+                margin-left: 40px;
+                padding-right: 0;
+            }
+        }
+    }
+    .for-who
+    {
+        height: 280px;
+        .way-left
+        {
+            a
+            {
+                margin-top: 40px;
+            }
+        }
+        .way-right
+        {
+            padding-left: 20px;
+            .abcom-it
+            {
+                width: 170px;
+                margin: 0;
+                margin-top: 25px;
+
+                vertical-align: bottom;
+                &:last-of-type
+                {
+                    p
+                    {
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+    }
+    .our-adv
+    {
+        h5
+        {
+            font-size: 22px;
+
+            margin-bottom: 25px;
+        }
+        .circle
+        {
+            width: 90px;
+            height: 90px;
+
+            box-shadow: 2px 2px 0 0 #70bdc3;
+        }
+        .our-adv-it
+        {
+            width: 49%;
+            margin-right: 0;
+            margin-bottom: 0;
+            div:nth-of-type(2)
+            {
+                margin-left: 5px;
+            }
+            p
+            {
+                br
+                {
+                    display: none;
+                }
+            }
+            .dib:last-child
+            {
+                width: 268px;
+            }
+        }
+    }
+    .want-to-und
+    {
+        margin-bottom: 15px;
+        h5
+        {
+            font-size: 22px;
+
+            margin-bottom: 25px;
+        }
+        p
+        {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 25px;
+        }
+    }
+    /* -------------------Что такое совместные покупки?---------------------------------*/
+    .togetbuy1
+    {
+        .wrap
+        {
+            background-position: right 90%;
+            background-size: 300px;
+        }
+        p:nth-of-type(2),
+        p:nth-of-type(3)
+        {
+            padding-right: 300px;
+        }
+    }
+    .togetbuy2
+    {
+        .wrap
+        {
+            background-position: left 0;
+            background-size: 230px;
+        }
+        p
+        {
+            &:first-of-type
+            {
+                font-size: 28px;
+                line-height: 44px;
+
+                margin-top: 40px;
+                margin-bottom: 10px;
+                padding-top: 0;
+            }
+            &:last-of-type
+            {
+                font-size: 14px;
+                line-height: 25px;
+
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .togetbuy3
+    {
+        h5
+        {
+            font-size: 22px;
+
+            margin-bottom: 0;
+            padding-right: 100px;
+        }
+        .togbuy-con
+        {
+            margin-top: 30px;
+
+            text-align: center;
+            .togbuy-it
+            {
+                width: 210px;
+                margin-right: 50px;
+                margin-bottom: 20px;
+                &:nth-of-type(3),
+                &:last-of-type
+                {
+                    margin-right: 0;
+                }
+            }
+            .square
+            {
+                width: 100px;
+                height: 100px;
+            }
+            p
+            {
+                font-size: 14px;
+            }
+        }
+    }
+    /* -------------------Как сделать заказ?---------------------------------*/
+    .how-to-order
+    {
+        h5
+        {
+            font-size: 22px;
+        }
+        p
+        {
+            font-size: 14px;
+            br
+            {
+                display: none;
+            }
+        }
+        a
+        {
+            padding: 9 30px;
+
+            text-transform: uppercase;
+        }
+        img
+        {
+            max-width: 100%;
+        }
+    }
+    /* -------------------ТОВАРЫ ОПТОМ ИЗ КИТАЯ---------------------------------*/
+    .from-china-head
+    {
+        background-position: top center;
+        h1
+        {
+            font-size: 40px;
+
+            padding: 3px 28px;
+        }
+        h3
+        {
+            font-size: 37px;
+
+            margin-top: 8px;
+        }
+        p
+        {
+            margin-top: 5px;
+        }
+        .ch-head-it
+        {
+            width: 190px;
+            p
+            {
+                font-size: 18px;
+
+                vertical-align: top;
+                span
+                {
+                    font-size: 28px;
+                }
+            }
+            &:nth-child(2)
+            {
+                width: 350px;
+                margin: 0 5px;
+
+                background-size: contain;
+                img
+                {
+                    width: 104px;
+                }
+            }
+            &:first-of-type
+            {
+                img
+                {
+                    width: 84%;
+                }
+            }
+            &:last-of-type
+            {
+                img
+                {
+                    width: 130px;
+                }
+            }
+        }
+    }
+    .why-china
+    {
+        margin-top: 40px;
+        h2
+        {
+            margin-bottom: 27px;
+            margin-left: 0;
+        }
+    }
+    .why-china-con1
+    {
+        margin-top: 25px;
+        .ch-it1
+        {
+            width: 100%;
+            margin-bottom: 20px;
+            .square
+            {
+                width: 100px;
+                height: 100px;
+
+                background-size: 50%;
+            }
+            p
+            {
+                font-size: 14px;
+
+                width: 70%;
+                margin-top: 14px;
+                margin-left: 30px;
+            }
+        }
+    }
+    .garant
+    {
+        h5
+        {
+            font-size: 22px;
+            line-height: 28px;
+
+            margin-top: 30px;
+            margin-bottom: 7px;
+            padding-right: 150px;
+        }
+    }
+
+    .garant
+    {
+        .chaina-garant
+        {
+            margin-top: 20px;
+            margin-bottom: 5px;
+
+            text-align: center;
+        }
+        .ch-it2
+        {
+            margin-right: 105px;
+            margin-bottom: 20px;
+            &:nth-of-type(3)
+            {
+                margin-right: 0;
+            }
+            .circle
+            {
+                width: 110px;
+                height: 110px;
+
+                background-size: 50%;
+                box-shadow: 2px 2px 0 0 #70bdc3;
+            }
+        }
+    }
+    .china-form
+    {
+        h5
+        {
+            font-size: 22px;
+        }
+        .ch-form-con
+        {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 0;
+            input
+            {
+                width: 47%;
+            }
+            .inputfile + label
+            {
+                width: 47%;
+            }
+            button
+            {
+                margin-top: 20px;
+            }
+        }
+        p
+        {
+            width: 100%;
+            margin-top: 25px;
+            margin-bottom: 22px;
+            margin-left: 0;
+        }
+    }
+    /* -------------------Умные часtы Smart Watch ---------------------------------*/
+    .gall
+    {
+        width: 330px;
+        a
+        {
+            width: 100px;
+            height: 100px;
+            margin-top: 15px;
+            margin-right: 10px;
+        }
+        a:first-of-type
+        {
+            height: 300px;
+        }
+    }
+    .sw-r
+    {
+        width: 390px;
+        h3
+        {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        span
+        {
+            font-size: 16px;
+        }
+        .trig-it
+        {
+            width: 160px;
+            margin-top: 12px;
+            button
+            {
+                width: 45px;
+            }
+            input
+            {
+                width: 69px;
+                padding: 9px 2px;
+            }
+        }
+    }
+    .trig-con
+    {
+        p
+        {
+            font-size: 26px;
+
+            margin-top: 17px;
+            margin-left: 16px;
+        }
+    }
+    .sw-btns
+    {
+        margin-top: 20px;
+        margin-bottom: 13px;
+        button
+        {
+            font-size: 16px;
+
+            padding: 12px 12px;
+            .dn
+            {
+                display: inline;
+            }
+            span:last-of-type
+            {
+                display: none;
+            }
+        }
+        button:first-of-type
+        {
+            margin-right: 5px;
+            padding: 12px 39px;
+        }
+         + p
+        {
+            margin-bottom: 14px;
+        }
+    }
+    .sw-r
+    {
+        table
+        {
+            width: 100%;
+            td
+            {
+                width: 58%;
+            }
+        }
+    }
+    table tr:nth-of-type(n+1) td
+    {
+        padding-top: 7px;
+    }
+    .smart-watch-top
+    {
+        .social-con
+        {
+            position: absolute;
+            bottom: 55px;
+            left: 0;
+
+            display: block;
+        }
+    }
+
+    .sw-adv-con
+    {
+        position: relative;
+        .social-con
+        {
+            display: none;
+        }
+        p
+        {
+            font-size: 14px;
+
+            width: 230px;
+            margin-right: 0;
+            margin-bottom: 3px;
+            padding-top: 0;
+            padding-left: 50px;
+
+            vertical-align: top;
+
+            background-position: left 30%;
+            &:first-of-type
+            {
+                padding: 13px 0 13px 45px;
+            }
+            &:nth-of-type(3)
+            {
+                width: 260px;
+            }
+        }
+    }
+    .tabs
+    {
+        margin-top: 25px;
+        margin-bottom: 100px;
+        .tabs-btns
+        {
+            a
+            {
+                font-size: 14px;
+
+                width: 130px;
+                margin-top: 1px;
+                padding: 12px 0;
+            }
+        }
+        p
+        {
+            font-size: 14px;
+            line-height: 27px;
+        }
+        ul
+        {
+            font-size: 14px;
+            line-height: 26px;
+
+            width: 48%;
+            margin-top: 12px;
+            &:last-of-type
+            {
+                margin-left: 2%;
+            }
+        }
+    }
+    .rew
+    {
+        .form-inp
+        {
+            width: 48%;
+        }
+        textarea
+        {
+            width: 48%;
+        }
+        .stars
+        {
+            margin-top: 18px;
+        }
+    }
+    /* -------------------Оформление заказа---------------------------------*/
+    .order
+    {
+        .order-top
+        {
+            margin-top: 56px;
+            margin-bottom: 28px;
+            .ord-top-rig
+            {
+                display: none;
+            }
+        }
+        .ord-tb-con-l
+        {
+            width: 100%;
+            table
+            {
+                td
+                {
+                    padding: 10px 20px 32px;
+                }
+                textarea
+                {
+                    height: 155px;
+                }
+                &:nth-of-type(2)
+                {
+                    td
+                    {
+                        padding-bottom: 15px;
+                    }
+                }
+                .ticket
+                {
+                    width: 88%;
+                    margin-top: 15px;
+                }
+                &:nth-of-type(3)
+                {
+                    td
+                    {
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .ord-tb-con-r
+        {
+            width: 100%;
+            margin-top: 10px;
+            margin-left: 0;
+            table
+            {
+                tr:nth-of-type(2)
+                {
+                    td
+                    {
+                        padding-top: 10px;
+                        padding-bottom: 12px;
+                    }
+                }
+                &:last-of-type
+                {
+                    margin-bottom: 22px;
+                }
+            }
+             > p
+            {
+                padding-left: 20px;
+            }
+        }
+    }
+    .basket
+    {
+        margin-top: 10px;
+        table
+        {
+            margin-top: 20px;
+            td
+            {
+                padding: 10px 12px;
+                table:last-of-type
+                {
+                    margin-top: 18px;
+                    th
+                    {
+                        padding-right: 0;
+                        padding-left: 0;
+
+                        text-align: center;
+                    }
+                    th:first-of-type
+                    {
+                        width: 100px;
+                    }
+                    th:nth-of-type(2)
+                    {
+                        width: 227px;
+                    }
+                    th:nth-of-type(3)
+                    {
+                        width: 105px;
+                    }
+                    th:nth-of-type(4)
+                    {
+                        width: 100px;
+                    }
+                    th:nth-of-type(5)
+                    {
+                        width: 114px;
+                    }
+                    th:last-of-type
+                    {
+                        width: 80px;
+                    }
+                    td
+                    {
+                        padding: 8px 10px;
+                        img
+                        {
+                            width: 100%;
+                            height: auto;
+                            margin: 0;
+                        }
+                        span
+                        {
+                            margin-top: 5px;
+                        }
+                    }
+                }
+                .sum
+                {
+                    margin-right: 110px;
+                }
+            }
+        }
+    }
 }
+
 
 @media screen and (max-width : 992px)
 {

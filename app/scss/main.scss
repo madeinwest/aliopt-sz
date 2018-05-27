@@ -1927,6 +1927,31 @@ table{
 	textarea{
 		width: 100%;
 		padding: 10px;
+		margin-top: 10px;
+	}
+	table:first-of-type{
+		td{
+			padding: 20px;
+			padding-bottom: 22px;
+		}
+		.fttl,
+		.fttr{
+			width: 47%;
+			margin-bottom: 15px;
+		}
+		.fttl{
+			float: left;
+		}
+		.fttr{
+			float: right;
+		}
+		input{
+			margin-top: 10px;
+			&:nth-child(6){
+				margin-bottom: 18px;
+			}
+		}
+
 	}
 }
 thead{
@@ -2014,11 +2039,11 @@ thead{
 		color: $pink;
 		font-size: 14px;
 		line-height: 24px;
-		padding-left: 20px;
 	}
 }
 .ticket{
 	position: relative;
+	margin-top: 10px;
 	input{
 		padding-right: 200px;
 	}

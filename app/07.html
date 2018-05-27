@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&amp;subset=cyrillic-ext" rel="stylesheet">
   </head>
   <body>
-    <!--<div id="maket"></div>-->
+    <div id="maket"></div>
     <header>
       <div class="head-nav">
         <div class="wrap">
@@ -157,32 +157,29 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><span>*</span> Фамилия Имя Отчество</td>
-                  <td><span>*</span> E-mail</td>
-                </tr>
-                <tr>
-                  <td><input type="text" placeholder="ФИО"></td>
-                  <td><input type="text" placeholder="E-mail"></td>
-                </tr>
-                <tr>
-                  <td><span>*</span> Город</td>
-                  <td><span>*</span> Телефон</td>
-                </tr>
-                <tr>
-                  <td><input type="text" placeholder="Город"></td>
-                  <td><input type="text" placeholder="Телефон"></td>
-                </tr>
-                <tr>
-                  <td colspan="2"><span>*</span> Серия и номер паспорта (для Транспортной Компании)</td>
-                </tr>
-                <tr>
-                  <td colspan="2"><input type="text" placeholder="Введите"></td>
-                </tr>
-                <tr>
-                  <td colspan="2"><span>*</span> Адрес (улица, дом, корпус, квартира)</td>
-                </tr>
-                <tr>
-                  <td colspan="2"><input type="text" placeholder="Адрес"></td>
+                  <td>
+                  <div class="fttl">
+                  <label><span>*</span> Фамилия Имя Отчество</label>
+                  <input type="text" placeholder="ФИО">
+                  </div>
+                  <div class="fttr">
+                  <label><span>*</span> E-mail</label>
+                  <input type="text" placeholder="E-mail">
+                  </div>
+                  <div class="fttl">
+                  <label><span>*</span> Город</label>
+                  <input type="text" placeholder="Город">
+                  </div>
+                  <div class="fttr">
+                  <label><span>*</span> Телефон</label>
+                  <input type="text" placeholder="Телефон">
+                  </div>
+               <label><span>*</span> Серия и номер паспорта (для Транспортной Компании)</label>
+               
+                  <input type="text" placeholder="Введите">
+                <label><span>*</span> Адрес (улица, дом, корпус, квартира)</label>
+                <input type="text" placeholder="Адрес">
+                </td>
                 </tr>
               </tbody>
             </table>
@@ -194,10 +191,9 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Комментарий</td>
-                </tr>
-                <tr>
-                  <td><textarea rows="7"></textarea></td>
+                  <td>
+                    <label>Комментарий</label>
+                  <textarea rows="7"></textarea></td>
                 </tr>
               </tbody>
             </table>
@@ -209,10 +205,9 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Комментарий</td>
-                </tr>
-                <tr>
                   <td>
+                    <label>Код купона</label>
+                
                     <form class="ticket" action="#">
                       <input type="text" placeholder="Код купона">
                       <button class="pink-btn">ПРИМЕНИТЬ</button>
