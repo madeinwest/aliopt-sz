@@ -278,9 +278,15 @@ li{
     }
     select{
     	padding: 9px 10px;
-    	width: 170px;
     	height: 37px;
     	border:none;
+    	outline:none;
+    	-webkit-appearance: none;
+		  background: transparent;
+		  margin-right: 65px;
+		  width: 203px;
+		  background:url('../img/ico/drop-select.png') 70% 55% no-repeat;
+		  color: #777;
     }
     button{
     	position: absolute;
@@ -336,7 +342,7 @@ li{
 }
 .bag-cont{
 	margin-top: 20px;
-	padding-left: 75px;
+	padding-left: 70px;
 	background: url(../img/ico/cart.png) no-repeat 3% 50%;;
 }
 
@@ -805,7 +811,7 @@ a.nav-open:hover+ul {
 }
 .subscrition{
 	.wrap{
-		padding: 0 57px;
+		padding: 0 57px 1px;
 		background: url(../img/subs-bg.jpg) no-repeat center;
 	  background-size: cover;
 	  max-width: 1170px;
@@ -1006,12 +1012,12 @@ footer{
 		a:last-child{
 			position: absolute;
 			margin: 28px 0 0 10px;
-  	  border-bottom: 1px solid #053549;
+  	  text-decoration: underline;
   	  line-height: 17px;
 	    color: #053549;
   	  font-weight: 600;
   	  &:hover{
-  	  	border: none;
+  	  	text-decoration: none;
   	  }
 		}
 	}
@@ -1469,6 +1475,9 @@ h5{
 		a{
 			color: #fff;
 			border-color: #fff;
+		}
+		img{
+			filter: brightness(320);
 		}
 	}
 	&:nth-child(3n){
