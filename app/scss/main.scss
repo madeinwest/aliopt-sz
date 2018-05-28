@@ -97,7 +97,10 @@ a {
 	color: inherit;
 	outline: 0!important
 }
-
+a,
+button{
+	transition:.25s ease-out all;
+}
 button:focus,
 input:focus,
 textarea:focus {
@@ -159,6 +162,7 @@ b, strong {
 li{
 	list-style: none;
 }
+
 .head-nav{
 	background-color: #09597a;
 	color: #fff;
@@ -223,7 +227,11 @@ li{
 		}
 	}
 }
+/* -------------------    */
 
+.mob-nav,
+.mob-menu{display: none;}
+/* ----------------------*/
 .dib{
 	display: inline-block;
 	vertical-align: top;
@@ -360,19 +368,17 @@ nav{
 .nav-open{
 	padding-right: 45px;
 	position: relative;
-	&:after{
-		position: absolute;
-		z-index: 2;
-		background:url(../img/ico/play.png) no-repeat;
-		width: 10px;
-		height: 5px;
-		content: '';
-		transition: all 0.25s;
-		right: 13px;
-		top: 50%;
+	background-image: url(../img/ico/play.png);
+	background-repeat: no-repeat;
+	background-position:80% 55%;
+}
+.main-nav{
+	li:nth-child(2){
+		a.nav-open{
+			background-position:90% 55%;
+		}
 	}
 }
-
 a.nav-open+ul:hover {
   display: block;
 }
@@ -383,6 +389,9 @@ a.nav-open+ul {
 
 a.nav-open:hover+ul {
   display: block;
+}
+.nav-tablat{
+	display: none;
 }
 
 .main-sub{
@@ -1052,6 +1061,121 @@ footer{
 		margin-right: 10px;
 	}
 }
+/*-----------------------popup---------------------------------------------*/
+	.exit{
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		top:20px;right: 20px;
+		background: url(../img/ico/x.png) no-repeat center;
+	}
+
+.pop-up{
+	width:474px;
+	min-height: 575px;
+	background-color: #fff;
+	border-radius:30px;
+	margin: 115px auto 0;
+	padding: 50px 50px 30px;
+	border:1px solid #dcdcdc;
+	position: relative;
+	.pop-up-t{
+		h4{
+			float: left;
+			font-size: 36px;
+			font-weight: 700;
+			line-height: 24px;
+		}
+		a{
+			float: right;
+			font-weight: 500;
+			line-height: 18px;
+			color: #099;
+			border-bottom: 1px solid #099;
+			margin-top: 10px;
+			margin-right: 7px;
+			&:hover{
+				border-color: transparent;
+			}
+		}
+	}
+	form{
+		width: 100%;
+		margin-top: 40px;
+		label{
+		display: inline-block;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 18px;
+    color:#585858;
+    font-weight: 500;
+    margin-bottom: 10px;
+		}
+		input{
+			width: 100%;
+			padding: 15px 10px;
+			margin-bottom: 25px;	
+		}
+		.pp-f-bt{
+			p{
+				float: left;
+				label{
+				font-size: 14px;
+				font-weight: 500;
+			}
+			}
+			a{
+				float: right;
+				display: inline-block;
+				font-size: 14px;
+				font-weight: 500;
+				color: #099;
+				border-bottom:1px solid #099;
+				&:hover{
+					border-color: transparent;
+				}
+			}
+		}
+		button{
+			border-radius:0;
+			width: 100%;
+			margin-top: 37px;
+			padding: 15px 0;
+			font-size: 18px;
+			font-weight: 700;
+			border-bottom: 4px solid #d32157;
+		}
+	}
+	.pp-soc-con{
+		margin-top: 20px;
+		p{
+			width: 58%;
+			float: left;
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: 500;
+			padding-left: 25px;
+			margin-top: 10px;
+		}
+		.pp-soc{
+			float: right;
+			width: 40%;
+			margin-top: 10px;
+			a{
+				vertical-align: middle;
+				margin-left: 10px;
+				img{
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
 /*----------------------- Deliver (Доставка)------------------------------*/
 .page-title{
 	margin-top: 22px;
@@ -1059,11 +1183,17 @@ footer{
 	line-height: 26px;
 	a{
 		font-weight: 500;
+		&:hover{
+			color:#111;
+		}
 	}
 	a:last-of-type{
 		color: $accent;
 		margin-left: 5px;
-		font-weight: 500;
+		font-weight: 600;
+		&:hover{
+			color:#0959DB;
+		}
 	}
 	h2{
 		padding-bottom: 30px;
@@ -1450,6 +1580,19 @@ h5{
 		color: $accent;
 		padding: 0;
 		margin-bottom: 20px;
+		position:relative;
+		padding-right: 20px;
+		&:after{
+			position: absolute;
+			content: "";
+			width: 12px;
+			height: 6px;
+			background: url(../img/ico/drop-dwn.png) no-repeat center;
+			right: 0;
+			top: 40%;
+			transform: translateY(-50%);
+			transform:rotate(-90deg)
+		}
 	}
 	p{
 		padding-right: 220px;
@@ -1607,12 +1750,12 @@ h5{
 	.wrap{
 		background: url(../img/togbuy-1.png) no-repeat right bottom ;
 	}
-	p:nth-of-type(2){
+	p:nth-of-type(1){
 		margin-top: 35px;
 		margin-bottom: 25px;
 	}
-	p:nth-of-type(2),
-	p:nth-of-type(3){
+	p:nth-of-type(1),
+	p:nth-of-type(2){
 		padding-right: 410px;
 		line-height: 24px;
 	}
