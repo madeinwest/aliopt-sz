@@ -285,7 +285,7 @@ li{
 		  background: transparent;
 		  margin-right: 65px;
 		  width: 203px;
-		  background:url('../img/ico/drop-select.png') 70% 55% no-repeat;
+		  background:url('../img/ico/drop-select.png') 135px 55% no-repeat;
 		  color: #777;
     }
     button{
@@ -477,11 +477,12 @@ a.nav-open:hover+ul {
 	}
 }
 .pop-bass{
-	max-width:1110px;
+	max-width:1150px;
 	border-radius:30px;
 	position: relative;
 	padding: 0 20px;
 	background-color: #fff;
+	border:1px solid #888;
 	h4{
 		text-align: left;
 		font-size: 30px;
@@ -2117,12 +2118,16 @@ thead{
 }
 
 [type="radio"]:checked,
-[type="radio"]:not(:checked) {
+[type="radio"]:not(:checked),
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
     position: absolute;
     left: -9999px;
 }
 [type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label
+[type="radio"]:not(:checked) + label,
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label
 {
     position: relative;
     padding-left: 28px;
@@ -2131,34 +2136,40 @@ thead{
     display: inline-block;
 }
 [type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
+[type="radio"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
     content: '';
     position: absolute;
     left: 0;
     top: 2px;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     border: 1px solid #ddd;
     background: #fff;
 }
 [type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
+[type="checkbox"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after,
+[type="checkbox"]:not(:checked) + label:after {
     content: '';
-    width: 7px;
-    height: 7px;
+    width: 8px;
+    height: 8px;
     background: $pink;
     position: absolute;
     top: 7px;
-    left: 5.5px;
+    left: 5px;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-[type="radio"]:not(:checked) + label:after {
+[type="radio"]:not(:checked) + label:after,
+[type="checkbox"]:not(:checked) + label:after {
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
 }
-[type="radio"]:checked + label:after {
+[type="radio"]:checked + label:after,
+[type="checkbox"]:checked + label:after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2227,37 +2238,49 @@ thead{
 		table{
 			margin-top: 5px;
 			margin-bottom: 15px;
+			display:block;
+			float: left;
+			vertical-align: top;
+			margin-left: 1px;
+			&:first-of-type{
+				width: 640px;
+				td:first-of-type{
+					width: 203px;
+				}
+				td:nth-of-type(2){
+					width: 308px;
+				}
+				td:last-of-type{
+					width: 130px;
+				}
 			td{
 				padding:4px 22px;
 		}
 		}
-	}
-	table:last-of-type{
-		td:last-of-type{
-			padding-bottom: 10px;
+		&:last-of-type{
+			width: 410px;
+			td{
+				padding:56px 20px 38px;
+			}
+			td:first-of-type{
+				width: 127px;
+			}
+			td:nth-of-type(2){
+				width: 130px;
+			}
+			td:last-of-type{
+				width: 155px;
+			}
 		}
+	}
+}
+	table{
 		span{
 			color: #a8a8a8
 		}
 		th,
 		td{
 			border-right:1px solid #dcdcdc
-		}
-		th:first-of-type{
-			width:205px;
-		}
-		th:nth-of-type(2){
-			width:310px;
-		}
-		th:nth-of-type(3){
-			width:125px;
-		}
-		th:nth-of-type(4),
-		th:nth-of-type(5){
-			width:130px;
-		}
-		th:nth-of-type(6){
-			width:160px;
 		}
 		a{
 			padding: 0;
@@ -2273,6 +2296,7 @@ thead{
 		button{
 			display: block;
 			margin: 0 auto;
+			background-color: transparent;
 			img{
 				width: 32px;
 				height: 36px;
@@ -2281,8 +2305,10 @@ thead{
 	}
 	.sum{
 	float: right;
+	width: 100%;
 	text-align: right;
 	margin-right: 192px;
+	font-weight: 600;
 	p{
 		span{
 			margin-left: 27px;
@@ -2306,9 +2332,9 @@ thead{
 		font-size: 30px;
 		font-weight: 600;
 		color: #fff;
-		background-color: $pink;
+		background-color: $pink!important;
 		&:hover{
-			background-color: #d32157;
+			background-color: #d32157!important;
 		}
 	}
 }
