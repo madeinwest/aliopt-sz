@@ -13,7 +13,7 @@
 
 body {
 	font-size: 16px;
-	min-width: 320px;
+	min-width: 470px;
 	position: relative;
 	line-height: 1.65;
 	font-family: $default-font;
@@ -104,7 +104,7 @@ button{
 button:focus,
 input:focus,
 textarea:focus {
-	outline: 1px solid red;
+	outline: none;
 }
 
 textarea{
@@ -1009,6 +1009,7 @@ footer{
 			margin-bottom: 25px;
     	margin-top: 6px;
    	 margin-left: 10px;
+   	 width: 100%;
 		}
 		a:last-child{
 			position: absolute;
@@ -1791,6 +1792,7 @@ h5{
 	p:last-of-type{
 		line-height: 30px;
 		margin-bottom: 62px;
+		padding-left: 420px;
 	}
 }
 .togetbuy3{
