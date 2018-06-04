@@ -1509,8 +1509,9 @@
             margin-right: 0;
             &:first-of-type{
                 float: left;
+                a{
                 padding-left: 40px;
-                background:url(../img/ico/menu.png)no-repeat left center;
+                background:url(../img/ico/menu.png)no-repeat left center;}
             }
             &:nth-of-type(2){
                 position: relative;
@@ -1532,8 +1533,9 @@
 
             &:last-of-type{
                 float: right;
+                a{
                 padding-right: 40px;
-                background:url(../img/ico/lk.png)no-repeat right center;
+                background:url(../img/ico/lk.png)no-repeat right center;}
             }
         }
     }
